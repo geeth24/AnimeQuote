@@ -125,7 +125,7 @@ struct ContentView: View {
             str1 = String(quoteData?.quote ?? "")
             //self.toDoStorage.toDos.append(QuoteData(anime: "test", character: "test", quote: str1))
             saved?.append(str1)
-            UserDefaults.standard.set(self.saved, forKey: "savedQuote")
+            //UserDefaults.standard.set(self.saved, forKey: "savedQuote")
 
         }
 
