@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2002922E264EEEFA00020657 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002922D264EEEFA00020657 /* Quote.swift */; };
+		20029234264EFDBC00020657 /* next.wav in Resources */ = {isa = PBXBuildFile; fileRef = 20029233264EFDBC00020657 /* next.wav */; };
+		20635A95264DBD1D007162CF /* Launch Screen copy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20635A94264DBD1D007162CF /* Launch Screen copy.storyboard */; };
 		20698B21264D06730059B078 /* AnimeQuoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20698B20264D06730059B078 /* AnimeQuoteApp.swift */; };
 		20698B23264D06730059B078 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20698B22264D06730059B078 /* ContentView.swift */; };
 		20698B25264D06740059B078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20698B24264D06740059B078 /* Assets.xcassets */; };
 		20698B28264D06740059B078 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20698B27264D06740059B078 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		20635A8D264DA956007162CF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2002922D264EEEFA00020657 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		20029233264EFDBC00020657 /* next.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = next.wav; sourceTree = "<group>"; };
+		20635A7D264DA955007162CF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		20635A7F264DA955007162CF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		20635A94264DBD1D007162CF /* Launch Screen copy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen copy.storyboard"; sourceTree = "<group>"; };
 		20698B1D264D06730059B078 /* AnimeQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20698B20264D06730059B078 /* AnimeQuoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeQuoteApp.swift; sourceTree = "<group>"; };
 		20698B22264D06730059B078 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,10 +54,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2002922F264EEF1400020657 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20698B22264D06730059B078 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20029230264EEF3200020657 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2002922D264EEEFA00020657 /* Quote.swift */,
+				20029233264EFDBC00020657 /* next.wav */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20635A7C264DA955007162CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20635A7D264DA955007162CF /* WidgetKit.framework */,
+				20635A7F264DA955007162CF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		20698B14264D06730059B078 = {
 			isa = PBXGroup;
 			children = (
 				20698B1F264D06730059B078 /* AnimeQuote */,
+				20635A7C264DA955007162CF /* Frameworks */,
 				20698B1E264D06730059B078 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,9 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				20698B20264D06730059B078 /* AnimeQuoteApp.swift */,
-				20698B22264D06730059B078 /* ContentView.swift */,
+				2002922F264EEF1400020657 /* Views */,
+				20029230264EEF3200020657 /* Supporting Files */,
 				20698B24264D06740059B078 /* Assets.xcassets */,
 				20698B29264D06740059B078 /* Info.plist */,
+				20635A94264DBD1D007162CF /* Launch Screen copy.storyboard */,
 				20698B26264D06740059B078 /* Preview Content */,
 			);
 			path = AnimeQuote;
@@ -79,6 +129,7 @@
 				20698B19264D06730059B078 /* Sources */,
 				20698B1A264D06730059B078 /* Frameworks */,
 				20698B1B264D06730059B078 /* Resources */,
+				20635A8D264DA956007162CF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -126,7 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20029234264EFDBC00020657 /* next.wav in Resources */,
 				20698B28264D06740059B078 /* Preview Assets.xcassets in Resources */,
+				20635A95264DBD1D007162CF /* Launch Screen copy.storyboard in Resources */,
 				20698B25264D06740059B078 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20698B23264D06730059B078 /* ContentView.swift in Sources */,
+				2002922E264EEEFA00020657 /* Quote.swift in Sources */,
 				20698B21264D06730059B078 /* AnimeQuoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,9 +319,11 @@
 		20698B2D264D06740059B078 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeQuote/Preview Content\"";
 				DEVELOPMENT_TEAM = 9PX6B5P246;
 				ENABLE_PREVIEWS = YES;
@@ -277,19 +333,22 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.radsoftinc.AnimeQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		20698B2E264D06740059B078 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeQuote/Preview Content\"";
 				DEVELOPMENT_TEAM = 9PX6B5P246;
 				ENABLE_PREVIEWS = YES;
@@ -299,10 +358,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.radsoftinc.AnimeQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
