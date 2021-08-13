@@ -9,9 +9,11 @@ import SwiftUI
 import WidgetKit
 
 struct QuoteWidgetView: View {
+    
     var data: Model
 
     var body: some View {
+        
         ZStack {
             
             Image("House")

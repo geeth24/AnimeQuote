@@ -16,6 +16,8 @@ struct QuotesView: View {
     
     @State var dataLoaded = false
     
+    @State private var isShowingSettings = false
+
     
     var body: some View {
         ZStack{
@@ -24,7 +26,6 @@ struct QuotesView: View {
                 .ignoresSafeArea()
                 .blur(radius: 5)
 
-            
             ZStack{
                 HStack {
                     Button(action: loadData) {
@@ -51,6 +52,23 @@ struct QuotesView: View {
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
                 .padding()
+            
+            ZStack{
+                Button(action: {
+                    isShowingSettings = true
+                    
+                }){
+                    Image(systemName: "info.circle")
+                        .foregroundColor(Color.init("Anime"))
+                        .font(.title3)
+
+                }
+                .sheet(isPresented: $isShowingSettings){
+                    InfoView()
+                }
+                .padding()
+                .shadow(color: Color(.purple), radius: 7)
+            }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
             
             VStack {
                 VStack(alignment: .leading) {
@@ -81,7 +99,7 @@ struct QuotesView: View {
                             .shadow(color: Color(.purple), radius: 7)
                     } else {
                         ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: Color.purple))                            .shadow(color: Color(.systemPink), radius: 7)
+                            .progressViewStyle(CircularProgressViewStyle(tint: Color.purple))                            .shadow(color: Color(.purple), radius: 7)
                     }
                     
                     

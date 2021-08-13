@@ -95,8 +95,8 @@ struct QuoteWidget: Widget {
             QuoteWidgetEntryView(data: data)
         }
         .supportedFamilies([.systemLarge])
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Random Quote")
+        .description("Displays A Random Quote")
     }
 }
 
