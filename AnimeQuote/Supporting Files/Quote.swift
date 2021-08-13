@@ -7,16 +7,10 @@
 
 import Foundation
 
-struct QuoteData: Decodable, Encodable{
+struct Quotes: Decodable{
     var anime: String
     var character: String
     var quote: String
-    
-    init(anime: String, character: String, quote: String){
-        self.anime = anime
-        self.character = character
-        self.quote = quote
-    }
 }
 
 
