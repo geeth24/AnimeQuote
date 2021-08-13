@@ -22,6 +22,8 @@ struct QuotesView: View {
             Image("Street")
                 .resizable()
                 .ignoresSafeArea()
+                .blur(radius: 5)
+
             
             ZStack{
                 HStack {
